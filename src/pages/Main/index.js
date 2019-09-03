@@ -52,7 +52,7 @@ export default class Main extends Component {
               <Card.Body>
                 <Card.Title>E-Shop</Card.Title>
                 <Card.Text>Ótima experiência para o usuário, interface amigável e não poluída.</Card.Text>
-                <Button variant="primary">Visitar loja</Button>
+                <Button variant="primary" href="/eshop">Visitar loja</Button>
               </Card.Body>
             </Card>
           </Col>
