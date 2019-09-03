@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Modal, Button, Form, FormControl } from "react-bootstrap";
+import { Modal, Button } from "react-bootstrap";
 import { login } from "../../services/user.service";
 
 function Carrinho() {
