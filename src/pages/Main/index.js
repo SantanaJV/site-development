@@ -50,7 +50,7 @@ export default class Main extends Component {
             <Card>
               <img src="holder.js/64x64" className="mt-3 rounded mx-auto d-block" />
               <Card.Body>
-                <Card.Title>Experimente o E-Shop</Card.Title>
+                <Card.Title>E-Shop</Card.Title>
                 <Card.Text>Ótima experiência para o usuário, interface amigável e não poluída.</Card.Text>
                 <Button variant="primary">Visitar loja</Button>
               </Card.Body>
