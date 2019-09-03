@@ -118,24 +118,26 @@ export default class Eshop extends React.Component {
               </ListGroup>
             </Col>
             <Col lg="9">
-              <CardColumns>
+              <Row>
                 {this.state.currentProducts.map((product, idx) => (
-                  <Card>
-                    <Card.Img variant="top" src="holder.js/100px160"/>
-                    <Card.Body>
-                      <Card.Title>{product.name}</Card.Title>
-                      <Card.Text>
-                        Lorem ipsum dolor sit amet.
-                      </Card.Text>
-                    </Card.Body>
-                    <Card.Footer className="p-0">
-                      <Button variant="warning" className="w-100 h-100 d-block">
-                        <span className="display-4" style={{ fontSize: 22 }}>Carrinho</span>
-                      </Button>
-                    </Card.Footer>
-                  </Card>
+                  <Col lg="4" className="mb-3">
+                    <Card>
+                      <Card.Img variant="top" src="https://lorempixel.com/260/160"/>
+                      <Card.Body>
+                        <Card.Title>{product.name}</Card.Title>
+                        <Card.Text>
+                          Lorem ipsum dolor sit amet.
+                        </Card.Text>
+                      </Card.Body>
+                      <Card.Footer className="p-0">
+                        <Button variant="warning" className="w-100 h-100 d-block">
+                          <span className="display-4" style={{ fontSize: 22 }}>Carrinho</span>
+                        </Button>
+                      </Card.Footer>
+                    </Card>
+                  </Col>
                 ))}
-              </CardColumns>
+              </Row>
             </Col>
           </Row>
         </Container>
