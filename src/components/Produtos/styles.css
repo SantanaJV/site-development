@@ -1,0 +1,8 @@
+.pointer {
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none !important;
+  color: black !important;
+}
