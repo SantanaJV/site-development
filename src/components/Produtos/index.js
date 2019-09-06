@@ -1,6 +1,5 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { Container, Col, Row, ListGroup, Card, Button } from "react-bootstrap";
 
 import Carrinho from "../../components/Carrinho";
@@ -24,55 +23,81 @@ export default class Produtos extends React.Component {
     products: [
       {
         name: "Eletronic 1",
-        category: "eletronicos"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "eletronicos",
+        price: 10
       },
       {
         name: "Eletronic 2",
-        category: "eletronicos"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "eletronicos",
+        price: 20
       },
       {
         name: "Eletronic 3",
-        category: "eletronicos"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "eletronicos",
+        price: 30
       },
       {
         name: "Roupa 1",
-        category: "roupas"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "roupas",
+        price: 10
       },
       {
         name: "Roupa 2",
-        category: "roupas"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "roupas",
+        price: 20
       },
       {
         name: "Roupa 3",
-        category: "roupas"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "roupas",
+        price: 30
       },
       {
         name: "Eletrodoméstico 1",
-        category: "eletrodomesticos"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "eletrodomesticos",
+        price: 10
       },
       {
         name: "Eletrodoméstico 2",
-        category: "eletrodomesticos"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "eletrodomesticos",
+        price: 20
       },
       {
         name: "Eletrodoméstico 3",
-        category: "eletrodomesticos"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "eletrodomesticos",
+        price: 30
       },
       {
         name: "Eletrodoméstico 4",
-        category: "eletrodomesticos"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "eletrodomesticos",
+        price: 40
       },
       {
         name: "Eletrodoméstico 5",
-        category: "eletrodomesticos"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "eletrodomesticos",
+        price: 50
       },
       {
         name: "Eletrodoméstico 6",
-        category: "eletrodomesticos"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "eletrodomesticos",
+        price: 60
       },
       {
         name: "Eletrodoméstico 7",
-        category: "eletrodomesticos"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "eletrodomesticos",
+        price: 70
       }
     ],
     currentCategory: {},
@@ -84,10 +109,10 @@ export default class Produtos extends React.Component {
     let { products } = this.state;
     this.setState({ currentCategory: category });
 
-    let p = [];
-    products.map(product => {
+    let p = []; 
+
+    products.forEach(product => {
       if (product.category === category.category) p.push(product);
-      return;
     });
 
     this.setState({ currentProducts: p });
@@ -117,7 +142,7 @@ export default class Produtos extends React.Component {
             />
             <Card.Body>
               <Card.Title>{product.name}</Card.Title>
-              <Card.Text>Lorem ipsum dolor sit amet.</Card.Text>
+              <Card.Text className="ellipsis">{product.description}</Card.Text>
             </Card.Body>
             <Card.Footer className="p-0">
               <Carrinho />
@@ -130,9 +155,18 @@ export default class Produtos extends React.Component {
         <Col xs="12" className="mb-3">
           <ListGroup>
             {this.state.currentProducts.map((product, idx) => (
-              <ListGroup.Item className="p-0" key={idx}>
-                <img className="mr-2" src="https://lorempixel.com/64/64"/>
-                <h5 className="m-0">{product.name}</h5>
+              <ListGroup.Item className="p-0 d-inline-flex align-items-stretch justify-content-between" key={idx}>
+                <div className="d-inline-flex flex-fill align-items-center">
+                  <img src="https://lorempixel.com/64/64" alt="Product Icon" />
+                  <h5 className="m-0 ml-2 display-4 rem-2 no-wrap">{product.name}</h5>
+                </div>
+                <div className="mx-3 flex-fill align-self-center ellipsis">
+                    {product.description}
+                </div>
+                <div className="d-inline-flex align-items-center">
+                  <p className="rem-5 display-4 green m-0 mr-3">{product.price}$</p>
+                  <Carrinho />
+                </div>
               </ListGroup.Item>
             ))}
           </ListGroup>

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-
 import { Modal, Button } from "react-bootstrap";
-import { login } from "../../services/user.service";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Carrinho() {
   const [show, setShow] = useState(false);
@@ -11,21 +10,14 @@ function Carrinho() {
   };
   const handleClose = () => setShow(false);
 
-  const handleClick = () => {
-    login();
-    handleClose();
-  };
-
   return (
     <>
       <Button
         variant="warning"
-        className="w-100 h-100 d-block"
+        className="w-100 h-100 d-inline-block"
         onClick={handleShow}
       >
-        <span className="display-4" style={{ fontSize: 22 }}>
-          Carrinho
-        </span>
+        <FontAwesomeIcon icon="cart-plus" size="2x"/>
       </Button>
 
       <Modal show={show} onHide={handleClose}>

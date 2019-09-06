@@ -9,6 +9,47 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.no-wrap, .ellipsis {
+  white-space: nowrap;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.rem-1 {
+  font-size: 1rem!important;
+}
+
+.rem-2 {
+  font-size: 1.1rem!important;
+}
+
+.rem-3 {
+  font-size: 1.25rem!important;
+}
+
+.rem-4 {
+  font-size: 1.4rem!important;
+}
+
+.rem-5 {
+  font-size: 1.5rem!important;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;

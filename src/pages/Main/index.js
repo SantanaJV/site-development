@@ -45,10 +45,10 @@ export default class Main extends Component {
             </Carousel>
           </Col>
         </Row>
-        <Row className="mt-5">
+        <Row className="mt-5 text-center">
           <Col md="4">
             <Card>
-              <img src="holder.js/64x64" className="mt-3 rounded mx-auto d-block" />
+              <img src="holder.js/64x64" className="mt-3 rounded mx-auto d-block" alt="placeholder 1" />
               <Card.Body>
                 <Card.Title>E-Shop</Card.Title>
                 <Card.Text>Ótima experiência para o usuário, interface amigável e não poluída.</Card.Text>
@@ -58,7 +58,7 @@ export default class Main extends Component {
           </Col>
           <Col md="4">
             <Card>
-              <img src="holder.js/64x64" className="mt-3 rounded mx-auto d-block" />
+              <img src="holder.js/64x64" className="mt-3 rounded mx-auto d-block" alt="placeholder 2" />
               <Card.Body>
                 <Card.Title>Blog pessoal</Card.Title>
                 <Card.Text>Fácil, simples, objetivo, descomplicado. A solução perfeita para o seu blog.</Card.Text>
@@ -68,7 +68,7 @@ export default class Main extends Component {
           </Col>
           <Col md="4">
             <Card>
-              <img src="holder.js/64x64" className=" mt-3 rounded mx-auto d-block" />
+              <img src="holder.js/64x64" className=" mt-3 rounded mx-auto d-block" alt="placeholder 3" />
               <Card.Body>
                 <Card.Title>O que der na telha!</Card.Title>
                 <Card.Text>Dê a sua ideia, e a veja se tornar realidade!</Card.Text>
