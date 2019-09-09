@@ -23,7 +23,7 @@ const Produto = function({ match }) {
         <Card.Body>{product.description}</Card.Body>
         <Card.Footer>
           <div className="float-right d-flex">
-            <h5 className="display-4 mr-3 green">{product.price},00$</h5>
+            <h5 className="display-4 mr-3 green">${(product.price / 100).toFixed(2)}</h5>
             <div style={{ width: 150, height: 75 }}>
               <Carrinho />
             </div>

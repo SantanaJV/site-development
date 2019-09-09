@@ -1,6 +1,8 @@
 import  React, { Component } from 'react';
 
 import { Container, Row, Col, Card, Carousel, Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 export default class Main extends Component {
   render() {
@@ -48,27 +50,31 @@ export default class Main extends Component {
         <Row className="mt-5 text-center">
           <Col md="4">
             <Card>
-              <img src="holder.js/64x64" className="mt-3 rounded mx-auto d-block" alt="placeholder 1" />
+              <FontAwesomeIcon className="align-self-center my-3" color="red" icon="store" size="3x" />
               <Card.Body>
                 <Card.Title>E-Shop</Card.Title>
                 <Card.Text>Ótima experiência para o usuário, interface amigável e não poluída.</Card.Text>
-                <Button variant="primary" href="/eshop">Visitar loja</Button>
+                <Button variant="danger" href="/eshop">
+                  <Link to="/eshop" className="link">Visitar loja</Link>
+                </Button>
               </Card.Body>
             </Card>
           </Col>
           <Col md="4">
             <Card>
-              <img src="holder.js/64x64" className="mt-3 rounded mx-auto d-block" alt="placeholder 2" />
+              <FontAwesomeIcon className="align-self-center my-3" color="green" icon="pencil-alt" size="3x" />
               <Card.Body>
                 <Card.Title>Blog pessoal</Card.Title>
                 <Card.Text>Fácil, simples, objetivo, descomplicado. A solução perfeita para o seu blog.</Card.Text>
-                <Button variant="primary">Visitar blog</Button>
+                <Button variant="success">
+                  <Link to="/blog" className="link">Visitar blog</Link>
+                </Button>
               </Card.Body>
             </Card>
           </Col>
           <Col md="4">
             <Card>
-              <img src="holder.js/64x64" className=" mt-3 rounded mx-auto d-block" alt="placeholder 3" />
+              <FontAwesomeIcon className="align-self-center my-3" color="blue" icon="cogs" size="3x" />
               <Card.Body>
                 <Card.Title>O que der na telha!</Card.Title>
                 <Card.Text>Dê a sua ideia, e a veja se tornar realidade!</Card.Text>

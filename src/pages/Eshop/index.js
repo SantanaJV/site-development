@@ -2,13 +2,14 @@ import React from "react";
 
 import { Jumbotron } from "react-bootstrap";
 
-import Produtos from "../../components/Produtos";
+import Loja from "../../components/Loja";
+import AdminTools from '../../components/AdminTools';
 
 export default class Eshop extends React.Component {
   render() {
     return (
       <>
-        <Jumbotron>
+        <Jumbotron className="text-center">
           <h1>Sistema de pagamento integrado via Gerencianet!</h1>
           <p>
             Você só precisa se cadastrar no serviço, deixe a implementação
@@ -17,7 +18,8 @@ export default class Eshop extends React.Component {
             boleto ou cartão de crédito.
           </p>
         </Jumbotron>
-        <Produtos />
+        <Loja />
+        <AdminTools />
       </>
     );
   }

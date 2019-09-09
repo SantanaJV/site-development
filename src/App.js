@@ -5,14 +5,31 @@ import {
   faThLarge,
   faBars,
   faCartPlus,
-  faArrowLeft
+  faArrowLeft,
+  faArrowRight,
+  faStore,
+  faCogs,
+  faPencilAlt
 } from "@fortawesome/free-solid-svg-icons";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-library.add(faThLarge, faBars, faCartPlus, faArrowLeft);
+library.add(faThLarge, faBars, faCartPlus, faArrowLeft, faArrowRight, faStore, faCogs, faPencilAlt);
 
 function App() {
   return (
     <div className="App">
+      <ToastContainer 
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnVisibilityChange
+        draggable
+        pauseOnHover
+      />
       <Routes />
     </div>
   );

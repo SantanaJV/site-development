@@ -1,14 +1,18 @@
-import React, { useState } from "react";
-import { Modal, Button } from "react-bootstrap";
+import React from "react";
+import { Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ToastContainer, toast } from 'react-toastify';
 
 function Carrinho() {
-  const [show, setShow] = useState(false);
-
   const handleShow = () => {
-    if (!localStorage.getItem("loggedin")) setShow(true);
+    if (!localStorage.getItem("loggedin")) {
+      toast.error('Você precisa estar logado para isso!', {
+        toastId: 4
+      });
+    } else {
+      toast.success('Sucesso!');
+    }
   };
-  const handleClose = () => setShow(false);
 
   return (
     <>
@@ -19,14 +23,6 @@ function Carrinho() {
       >
         <FontAwesomeIcon icon="cart-plus" size="2x"/>
       </Button>
-
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Body closeButton>
-          <Modal.Title className="text-center">
-            Você precisa estar logado para isso!
-          </Modal.Title>
-        </Modal.Body>
-      </Modal>
     </>
   );
 }
