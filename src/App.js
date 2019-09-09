@@ -9,12 +9,23 @@ import {
   faArrowRight,
   faStore,
   faCogs,
-  faPencilAlt
+  faPencilAlt,
+  faPlusSquare
 } from "@fortawesome/free-solid-svg-icons";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-library.add(faThLarge, faBars, faCartPlus, faArrowLeft, faArrowRight, faStore, faCogs, faPencilAlt);
+library.add(
+  faThLarge,
+  faBars,
+  faCartPlus,
+  faArrowLeft,
+  faArrowRight,
+  faStore,
+  faCogs, 
+  faPencilAlt, 
+  faPlusSquare
+);
 
 function App() {
   return (
